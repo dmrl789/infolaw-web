@@ -2,24 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: light;
+/* High-contrast base theme for InfoLAW */
+
+html,
+body {
+  height: 100%;
 }
 
 body {
-  @apply bg-parchment text-slate-900 font-body antialiased;
+  background-color: #ffffff;
+  color: #020617; /* near slate-950 */
+  -webkit-font-smoothing: antialiased;
 }
 
-a {
-  @apply text-brand font-medium;
+/* Utility containers */
+.section {
+  @apply mx-auto max-w-6xl px-4 lg:px-6;
 }
 
-section {
-  @apply py-16;
+.card-surface {
+  @apply rounded-xl border border-slate-200 bg-white shadow-sm;
 }
 
-/* Design language notes
-   - Clean, legal-professional aesthetic with subtle futuristic cues.
-   - Palette: parchment background with deep navy gradients and bright brand blue accents.
-   - Typography: Inter for body copy, Space Grotesk for headings (see layout.tsx font import).
-*/
+.stat-label {
+  @apply text-xs font-medium uppercase tracking-wide text-slate-500;
+}
+
+.stat-value {
+  @apply text-2xl font-semibold text-slate-900;
+}

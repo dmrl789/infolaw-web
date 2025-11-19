@@ -1,94 +1,89 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
-import "./globals.css";
-import { Inter, Space_Grotesk } from "next/font/google";
-import Logo from "@/components/Logo";
-import MainNav from "@/components/MainNav";
 import Link from "next/link";
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space-grotesk" });
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "InfoLAW – Legal Reasoning for AI, Paid in IPN",
   description:
-    "InfoLAW.net is a curated, machine-readable library of legal reasoning authored by jurists, paid in IPN on the IPPAN network."
+    "InfoLAW.net is a curated, machine-readable library of legal reasoning authored by jurists, paid in IPN on the IPPAN network.",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
+      <body className="bg-white text-slate-900 antialiased">
         <div className="min-h-screen flex flex-col">
-          <header className="w-full border-b border-slate-200 bg-white/80 backdrop-blur-sm">
-            <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-              <Logo />
-              <MainNav />
-              <div className="flex items-center gap-3 md:hidden">
-                <details className="relative">
-                  <summary className="list-none rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold uppercase tracking-wide text-slate-700">
-                    Menu
-                  </summary>
-                  <div className="absolute right-0 mt-2 w-48 rounded-xl border border-slate-100 bg-white p-4 shadow-xl">
-                    {[
-                      { href: "/", label: "Home" },
-                      { href: "/for-jurists", label: "For Jurists" },
-                      { href: "/for-ai-teams", label: "For AI Teams" },
-                      { href: "/about", label: "About" },
-                      { href: "/contact", label: "Contact" }
-                    ].map((link) => (
-                      <Link key={link.href} href={link.href} className="block py-1 text-sm text-slate-700">
-                        {link.label}
-                      </Link>
-                    ))}
-                  </div>
-                </details>
+          {/* Top navigation */}
+          <header className="border-b border-slate-200 bg-white/90 backdrop-blur">
+            <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-6">
+              <Link href="/" className="flex items-center gap-2">
+                <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-slate-900 text-xs font-semibold text-white">
+                  IL
+                </span>
+                <span className="text-lg font-semibold tracking-tight">
+                  InfoLAW
+                </span>
+              </Link>
+
+              <nav className="hidden items-center gap-6 text-sm font-medium text-slate-700 md:flex">
+                <Link href="/" className="hover:text-slate-900">
+                  Home
+                </Link>
+                <Link href="/for-jurists" className="hover:text-slate-900">
+                  For Jurists
+                </Link>
+                <Link href="/for-ai-teams" className="hover:text-slate-900">
+                  For AI Teams
+                </Link>
+                <Link href="/about" className="hover:text-slate-900">
+                  About
+                </Link>
                 <Link
                   href="/contact"
-                  className="rounded-full border border-slate-900 px-3 py-2 text-xs font-semibold text-slate-900 transition hover:bg-slate-900 hover:text-white"
+                  className="rounded-md bg-slate-900 px-3 py-1.5 text-sm font-semibold text-white hover:bg-slate-800"
                 >
-                  Access
+                  Request Access
                 </Link>
-              </div>
-              <Link
-                href="/contact"
-                className="hidden rounded-full border border-slate-900 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-slate-900 hover:text-white md:inline-block"
-              >
-                Request Access
-              </Link>
+              </nav>
             </div>
           </header>
-          <main className="flex-1">{children}</main>
-          <footer className="border-t border-slate-200 bg-white">
-            <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 md:flex-row md:justify-between">
+
+          {/* Page content */}
+          <main className="flex-1">
+            {children}
+          </main>
+
+          {/* Footer */}
+          <footer className="border-t border-slate-200 bg-slate-50">
+            <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-6 text-sm text-slate-600 md:flex-row md:items-center md:justify-between lg:px-6">
               <div>
-                <p className="font-heading text-xl text-slate-900">InfoLAW.net</p>
-                <p className="mt-2 max-w-md text-sm text-slate-600">
-                  Structured legal reasoning authored by jurists, powered by the IPPAN network and IPN settlements. Future HashTimer anchoring keeps provenance intact.
+                <p className="font-semibold text-slate-800">InfoLAW.net</p>
+                <p className="text-xs text-slate-500">
+                  Structured legal reasoning authored by jurists, powered by the IPPAN
+                  network and IPN settlements.
                 </p>
               </div>
-              <div className="flex gap-10 text-sm text-slate-600">
-                <div>
-                  <p className="font-semibold text-slate-800">Network</p>
-                  <ul className="mt-2 space-y-2">
-                    <li>IPPAN + IPN</li>
-                    <li>HashTimer provenance</li>
-                  </ul>
+              <div className="flex flex-wrap items-center gap-4">
+                <div className="space-x-3">
+                  <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    Network
+                  </span>
+                  <span className="text-xs text-slate-600">IPPAN + IPN</span>
+                  <span className="text-xs text-slate-600">
+                    HashTimer provenance
+                  </span>
                 </div>
-                <div>
-                  <p className="font-semibold text-slate-800">Legal</p>
-                  <ul className="mt-2 space-y-2">
-                    <li>
-                      <Link href="#" className="hover:text-brand">
-                        Terms of Use
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#" className="hover:text-brand">
-                        Privacy Policy
-                      </Link>
-                    </li>
-                  </ul>
+                <div className="space-x-3 text-xs">
+                  <Link href="#" className="text-slate-500 hover:text-slate-800">
+                    Terms of Use
+                  </Link>
+                  <Link href="#" className="text-slate-500 hover:text-slate-800">
+                    Privacy Policy
+                  </Link>
                 </div>
               </div>
             </div>
