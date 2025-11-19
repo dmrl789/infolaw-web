@@ -23,7 +23,7 @@ export default function ContactPage() {
     );
 
     // Replace with the real address where you want to receive requests
-    const to = "info@infolaw.net";
+    const to = "avv.ugogiuliani@gmail.com";
 
     window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
 

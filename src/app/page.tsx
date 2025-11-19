@@ -3,92 +3,103 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <main className="bg-white">
-      {/* HERO: coloured, high-contrast */}
-      <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-sky-800 text-slate-50">
-        <div className="section py-16 lg:py-24">
+      {/* HERO – LIGHT, CLEAR, HIGH CONTRAST */}
+      <section className="border-b border-slate-200 bg-slate-50">
+        <div className="section py-14 lg:py-20">
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <div className="space-y-5">
-              <span className="inline-flex items-center gap-2 rounded-full bg-slate-900/70 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-300">
-                <span className="h-1.5 w-1.5 rounded-full bg-sky-400" />
+              <span className="inline-flex items-center gap-2 rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-800">
+                <span className="h-1.5 w-1.5 rounded-full bg-sky-500" />
                 Early access • Jurists & AI teams
               </span>
 
-              <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+              <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
                 Legal reasoning for AI,
-                <span className="block text-sky-300">
+                <span className="block text-sky-700">
                   authored by jurists & settled in IPN.
                 </span>
               </h1>
 
-              <p className="max-w-xl text-sm text-slate-200 sm:text-base">
-                InfoLAW.net is a curated library of doctrine, essays and case breakdowns, written by real jurists and structured for AI legal agents. Content is designed for continuous training and evaluation, so your models stay aligned with evolving law, regulation and practice.
+              <p className="max-w-xl text-sm text-slate-700 sm:text-base">
+                InfoLAW.net is a curated library of doctrine, essays and case
+                breakdowns, written by qualified jurists and structured for AI
+                legal agents. Content is designed for continuous training and
+                evaluation, so models stay aligned with evolving law,
+                regulation and practice.
               </p>
 
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/for-jurists"
-                  className="inline-flex items-center justify-center rounded-md bg-sky-500 px-4 py-2.5 text-sm font-semibold text-slate-950 shadow-sm hover:bg-sky-400"
+                  className="inline-flex items-center justify-center rounded-md bg-sky-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-500"
                 >
                   I&apos;m a jurist / scholar
                 </Link>
                 <Link
                   href="/for-ai-teams"
-                  className="inline-flex items-center justify-center rounded-md border border-slate-600 bg-slate-900/40 px-4 py-2.5 text-sm font-semibold text-slate-50 hover:border-sky-300 hover:bg-slate-900/70"
+                  className="inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-900 hover:border-sky-400"
                 >
                   I build AI legal tools
                 </Link>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center rounded-md border border-transparent px-4 py-2.5 text-sm font-medium text-sky-200 hover:text-sky-100"
+                  className="inline-flex items-center justify-center rounded-md px-4 py-2.5 text-sm font-medium text-sky-700 hover:text-sky-900"
                 >
                   Request early access →
                 </Link>
               </div>
 
-              <p className="max-w-md text-xs text-slate-300">
-                <span className="font-semibold text-sky-200">IPPAN launch:</span>{" "}
-                InfoLAW is built to settle access and rewards in IPN, the utility token of the IPPAN network. IPPAN is in advanced testing and will be launched soon; early partners will be the first to onboard.
+              <p className="max-w-md text-xs text-slate-600">
+                <span className="font-semibold text-sky-700">IPPAN launch:</span>{" "}
+                InfoLAW is designed to settle access and rewards in IPN, the
+                utility token of the IPPAN network. IPPAN is in advanced testing
+                and will be launched soon; early partners will be the first to
+                onboard.
               </p>
             </div>
 
+            {/* Simple visual “card” column */}
             <div className="space-y-4">
-              <div className="card-surface bg-slate-900/60 text-slate-100">
-                <div className="border-b border-slate-700 px-5 py-3 text-xs font-semibold uppercase tracking-wide text-slate-300">
+              <div className="card-surface p-5 sm:p-6">
+                <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
                   Continuous AI legal training
-                </div>
-                <div className="space-y-3 px-5 py-4 text-sm text-slate-100">
-                  <p>
-                    Law doesn&apos;t stand still—new statutes, cases and regulations appear every month. Static training corpora become stale quickly.
-                  </p>
-                  <p>
-                    InfoLAW focuses on continuously updated doctrine and structured reasoning so AI systems can be re-trained and evaluated on fresh, jurisdiction-aware material. This helps reduce hallucinations, keep citations current, and surface the reasoning a human lawyer would expect to see.
-                  </p>
-                </div>
+                </h2>
+                <p className="mt-3 text-sm text-slate-700">
+                  Law doesn&apos;t stand still. New statutes, cases and
+                  regulatory guidance appear continuously. Static training sets
+                  become stale and increase the risk of hallucinations and
+                  outdated answers.
+                </p>
+                <p className="mt-2 text-sm text-slate-700">
+                  InfoLAW focuses on continuously updated doctrine and
+                  structured reasoning so AI systems can be re-trained and
+                  evaluated on fresh, jurisdiction-aware material—keeping
+                  answers explainable and anchored in real legal analysis.
+                </p>
               </div>
 
               <div className="grid gap-3 sm:grid-cols-3">
-                <div className="card-surface bg-slate-900/50 p-4 text-xs text-slate-100">
-                  <p className="font-semibold text-sky-300">
-                    Jurist-authored
-                  </p>
-                  <p className="mt-1 text-slate-200">
-                    Doctrine, essays and case breakdowns written by qualified jurists and scholars.
+                <div className="card-surface p-4 text-xs text-slate-700">
+                  <p className="font-semibold text-sky-700">Jurist-authored</p>
+                  <p className="mt-1">
+                    Doctrine, essays and case breakdowns written by qualified
+                    jurists and scholars.
                   </p>
                 </div>
-                <div className="card-surface bg-slate-900/50 p-4 text-xs text-slate-100">
-                  <p className="font-semibold text-sky-300">
+                <div className="card-surface p-4 text-xs text-slate-700">
+                  <p className="font-semibold text-sky-700">
                     Structured for AI
                   </p>
-                  <p className="mt-1 text-slate-200">
-                    Facts, issues, rules, analysis and conclusion explicitly modeled for machine learning.
+                  <p className="mt-1">
+                    Facts, issues, rules, analysis and conclusion explicitly
+                    modeled for machine learning.
                   </p>
                 </div>
-                <div className="card-surface bg-slate-900/50 p-4 text-xs text-slate-100">
-                  <p className="font-semibold text-sky-300">
-                    IPN settlements
-                  </p>
-                  <p className="mt-1 text-slate-200">
-                    Designed to settle access rights and rewards in IPN on the IPPAN network once live.
+                <div className="card-surface p-4 text-xs text-slate-700">
+                  <p className="font-semibold text-sky-700">IPN settlements</p>
+                  <p className="mt-1">
+                    Designed to settle access rights and rewards in IPN on the
+                    IPPAN network once live.
                   </p>
                 </div>
               </div>
@@ -97,48 +108,72 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SECTION: Why continuous AI legal training matters */}
+      {/* WORKFLOW OF LEGAL REASONING */}
       <section className="section py-12 lg:py-16">
-        <div className="grid gap-10 md:grid-cols-2 md:items-start">
-          <div className="space-y-3">
-            <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-              Why continuous AI legal training matters
-            </h2>
-            <p className="text-sm text-slate-600">
-              Legal AI cannot be a one-off fine-tune. Precedents shift, statutes evolve, and regulators publish new guidance. Without a stream of updated doctrine and reasoning, even a strong model will drift away from reality.
+        <div className="max-w-3xl">
+          <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+            Workflow of legal reasoning in InfoLAW
+          </h2>
+          <p className="mt-3 text-sm text-slate-700">
+            InfoLAW describes a full workflow from human doctrine to AI-ready
+            supervision. Jurists stay in control of the legal analysis, while
+            AI systems consume a structured, verifiable version of their work.
+          </p>
+        </div>
+
+        <div className="mt-8 grid gap-6 md:grid-cols-4">
+          <div className="card-surface p-4">
+            <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+              Step 1
             </p>
-            <ul className="mt-3 space-y-2 text-sm text-slate-700">
-              <li>
-                • <span className="font-medium">Reduce hallucinations:</span>{" "}
-                link answers back to curated doctrine and case breakdowns.
-              </li>
-              <li>
-                • <span className="font-medium">Stay current:</span> refresh training and evaluation sets as new legal materials are published.
-              </li>
-              <li>
-                • <span className="font-medium">Explainable reasoning:</span>{" "}
-                expose the structure a human lawyer expects—facts, issues, rules, analysis, conclusion.
-              </li>
-              <li>
-                • <span className="font-medium">Jurisdiction-aware:</span> avoid mixing incompatible systems by tagging content by jurisdiction and court level.
-              </li>
-            </ul>
+            <h3 className="mt-1 text-sm font-semibold text-slate-900">
+              Jurist drafts doctrine
+            </h3>
+            <p className="mt-2 text-xs text-slate-700">
+              A jurist, lawyer or scholar writes a doctrine article, essay or
+              case breakdown in clear legal language.
+            </p>
           </div>
 
-          <div className="card-surface p-6 sm:p-7">
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
-              InfoLAW&apos;s role in your AI stack
-            </h3>
-            <p className="mt-3 text-sm text-slate-700">
-              InfoLAW sits between human jurists and your AI models. Jurists publish doctrine, essays and structured analyses. InfoLAW turns that into machine-readable corpora and evaluation sets that can be used to:
+          <div className="card-surface p-4">
+            <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+              Step 2
             </p>
-            <ul className="mt-3 space-y-2 text-sm text-slate-700">
-              <li>• Fine-tune or adapt legal LLMs.</li>
-              <li>• Evaluate agents on realistic tasks and jurisdictions.</li>
-              <li>• Provide ground truth for explainable answers in production.</li>
-            </ul>
-            <p className="mt-4 text-xs text-slate-500">
-              As IPPAN launches, payments for access, curation and review are designed to be settled on-chain in IPN, closing the loop between legal work, AI systems and economic incentives.
+            <h3 className="mt-1 text-sm font-semibold text-slate-900">
+              Structured for AI
+            </h3>
+            <p className="mt-2 text-xs text-slate-700">
+              InfoLAW maps the content into a structured schema: facts, issues,
+              rules, analysis, conclusion, with metadata for jurisdiction and
+              court level.
+            </p>
+          </div>
+
+          <div className="card-surface p-4">
+            <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+              Step 3
+            </p>
+            <h3 className="mt-1 text-sm font-semibold text-slate-900">
+              Anchored & priced
+            </h3>
+            <p className="mt-2 text-xs text-slate-700">
+              The work is prepared to be anchored on IPPAN (HashTimer) and
+              assigned an IPN-based access price or included in a collection for
+              continuous training and evaluation.
+            </p>
+          </div>
+
+          <div className="card-surface p-4">
+            <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+              Step 4
+            </p>
+            <h3 className="mt-1 text-sm font-semibold text-slate-900">
+              AI teams consume
+            </h3>
+            <p className="mt-2 text-xs text-slate-700">
+              AI and legaltech teams use the structured doctrine as training
+              data, evaluation sets and ground truth, paying in IPN once IPPAN
+              goes live.
             </p>
           </div>
         </div>
