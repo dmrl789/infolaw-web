@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-parchment text-slate-900 font-body antialiased;
+}
+
+a {
+  @apply text-brand font-medium;
+}
+
+section {
+  @apply py-16;
+}
+
+/* Design language notes
+   - Clean, legal-professional aesthetic with subtle futuristic cues.
+   - Palette: parchment background with deep navy gradients and bright brand blue accents.
+   - Typography: Inter for body copy, Space Grotesk for headings (see layout.tsx font import).
+*/
