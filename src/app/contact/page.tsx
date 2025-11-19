@@ -22,7 +22,7 @@ export default function ContactPage() {
       `Name: ${name}\nEmail: ${email}\nRole: ${role}\n\nMessage:\n${message}`
     );
 
-    // TODO: replace with your real contact email address
+    // Replace with the real address where you want to receive requests
     const to = "info@infolaw.net";
 
     window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
@@ -38,9 +38,7 @@ export default function ContactPage() {
             Request early access
           </h1>
           <p className="mt-3 text-sm text-slate-600 sm:text-base">
-            We’re onboarding a small cohort of jurists and AI partners to shape
-            schemas, payouts, and APIs. Share a few details and we’ll follow up
-            by email.
+            We&apos;re onboarding a small cohort of jurists, law firms and AI teams to shape schemas, payouts and API access. Share a few details and we&apos;ll follow up by email.
           </p>
         </div>
 
@@ -95,7 +93,7 @@ export default function ContactPage() {
                 className="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm outline-none ring-0 focus:border-slate-900 focus:ring-1 focus:ring-slate-900"
               >
                 <option>Jurist / lawyer / scholar</option>
-                <option>Law firm innovation / KM</option>
+                <option>Law firm / in-house team</option>
                 <option>AI / legaltech builder</option>
                 <option>University / research group</option>
                 <option>Other</option>
@@ -107,7 +105,7 @@ export default function ContactPage() {
                 htmlFor="message"
                 className="text-sm font-medium text-slate-800"
               >
-                What do you want to do with InfoLAW?
+                How do you want to use InfoLAW?
               </label>
               <textarea
                 id="message"
@@ -115,7 +113,7 @@ export default function ContactPage() {
                 rows={5}
                 required
                 className="w-full resize-none rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm outline-none ring-0 placeholder:text-slate-400 focus:border-slate-900 focus:ring-1 focus:ring-slate-900"
-                placeholder="Briefly describe your practice, jurisdiction, and how you’d like to use or contribute to InfoLAW."
+                placeholder="Briefly describe your jurisdiction(s), use cases, and how you’d like to contribute or integrate InfoLAW."
               />
             </div>
 
@@ -123,15 +121,14 @@ export default function ContactPage() {
               <button
                 type="submit"
                 disabled={status === "opening"}
-                className="inline-flex items-center justify-center rounded-md bg-slate-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-70"
+                className="inline-flex items-center justify-center rounded-md bg-sky-500 px-4 py-2.5 text-sm font-semibold text-slate-950 shadow-sm hover:bg-sky-400 disabled:cursor-not-allowed disabled:opacity-70"
               >
                 {status === "opening"
                   ? "Opening your email app…"
                   : "Send via email"}
               </button>
               <p className="max-w-xs text-xs text-slate-500">
-                This will open your default email application with a pre-filled
-                message addressed to InfoLAW.
+                This will open your default email application with a pre-filled message addressed to InfoLAW.
               </p>
             </div>
           </form>
