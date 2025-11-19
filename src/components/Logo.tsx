@@ -8,7 +8,7 @@ export default function Logo() {
       </div>
       <div>
         <p className="text-lg font-heading tracking-wide text-slate-900">InfoLAW</p>
-        <p className="text-xs uppercase tracking-[0.3em] text-slate-500">IPN Native</p>
+        <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Fair Utility</p>
       </div>
     </Link>
   );

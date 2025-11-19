@@ -3,9 +3,9 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "InfoLAW – Legal Reasoning for AI, Paid in IPN",
+  title: "InfoLAW – Legal Reasoning for AI, Fair Utility Rewards",
   description:
-    "InfoLAW.net is a curated, machine-readable library of legal reasoning authored by jurists, paid in IPN on the IPPAN network.",
+    "InfoLAW.net is a curated, machine-readable library of legal reasoning authored by jurists where contributions are rewarded with utility tokens fairly.",
 };
 
 export default function RootLayout({
@@ -66,16 +66,15 @@ export default function RootLayout({
               <div>
                 <p className="font-semibold text-slate-800">InfoLAW.net</p>
                 <p className="text-xs text-slate-500">
-                  Structured legal reasoning authored by jurists, powered by the IPPAN
-                  network and IPN settlements.
+                  Structured legal reasoning authored by jurists, with contributions rewarded fairly through utility tokens.
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-4">
                 <div className="space-x-3">
                   <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                    Network
+                    Rewards
                   </span>
-                  <span className="text-xs text-slate-600">IPPAN + IPN</span>
+                  <span className="text-xs text-slate-600">Fair utility tokens</span>
                   <span className="text-xs text-slate-600">
                     HashTimer provenance
                   </span>

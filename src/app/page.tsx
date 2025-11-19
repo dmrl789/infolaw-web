@@ -16,7 +16,7 @@ export default function HomePage() {
               <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
                 Legal reasoning for AI,
                 <span className="block text-sky-300">
-                  authored by jurists & settled in IPN.
+                  authored by jurists & fairly rewarded with utility tokens.
                 </span>
               </h1>
 
@@ -46,8 +46,7 @@ export default function HomePage() {
               </div>
 
               <p className="max-w-md text-xs text-slate-300">
-                <span className="font-semibold text-sky-200">IPPAN launch:</span>{" "}
-                InfoLAW is built to settle access and rewards in IPN, the utility token of the IPPAN network. IPPAN is in advanced testing and will be launched soon; early partners will be the first to onboard.
+                In InfoLAW, contributions will be rewarded with utility tokens fairly, reflecting the quality and impact of the legal reasoning shared by jurists and scholars.
               </p>
             </div>
 
@@ -84,11 +83,9 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div className="card-surface bg-slate-900/50 p-4 text-xs text-slate-100">
-                  <p className="font-semibold text-sky-300">
-                    IPN settlements
-                  </p>
+                  <p className="font-semibold text-sky-300">Fair utility rewards</p>
                   <p className="mt-1 text-slate-200">
-                    Designed to settle access rights and rewards in IPN on the IPPAN network once live.
+                    Designed so that contributions can be rewarded with utility tokens fairly, aligning incentives between jurists and AI teams.
                   </p>
                 </div>
               </div>
@@ -138,7 +135,7 @@ export default function HomePage() {
               <li>• Provide ground truth for explainable answers in production.</li>
             </ul>
             <p className="mt-4 text-xs text-slate-500">
-              As IPPAN launches, payments for access, curation and review are designed to be settled on-chain in IPN, closing the loop between legal work, AI systems and economic incentives.
+              The platform is being built so that access, curation, and review can be priced transparently, with the intention that contributions are rewarded with utility tokens fairly over time.
             </p>
           </div>
         </div>

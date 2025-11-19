@@ -19,9 +19,9 @@ const useCases = [
 
 const benefits = [
   "Machine-readable datasets with schema docs and usage rights.",
-  "Provenance proofs anchored on IPPAN for audit-ready delivery.",
+  "Provenance proofs anchored with verifiable timestamps for audit-ready delivery.",
   "Future APIs for bulk ingestion, search filters, and event streams.",
-  "Transparent licensing with IPN settlements and receipts."
+  "Transparent licensing models that fairly reward contributors with utility tokens."
 ];
 
 export default function ForAITeamsPage() {
@@ -31,7 +31,7 @@ export default function ForAITeamsPage() {
         <p className="text-xs uppercase tracking-[0.4em] text-brand">For AI teams / legaltech</p>
         <h1 className="mt-4 font-heading text-4xl text-slate-900">Fuel AI legal agents with curated legal corpora.</h1>
         <p className="mt-6 text-lg text-slate-700">
-          InfoLAW delivers structured reasoning, labeled case breakdowns, and benchmarks sourced directly from jurists. Every item ships with provenance metadata and licensing priced in IPN so you can build trustworthy AI counsel faster.
+          InfoLAW delivers structured reasoning, labeled case breakdowns, and benchmarks sourced directly from jurists. Every item ships with provenance metadata and transparent licensing so AI usage can reward contributors with utility tokens fairly.
         </p>
       </section>
 

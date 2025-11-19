@@ -1,9 +1,9 @@
-# InfoLAW.net – Legal Reasoning for AI, Paid in IPN
+# InfoLAW.net – Legal Reasoning for AI, Fair Utility Rewards
 
-**Tagline**: A curated, machine-readable library of legal reasoning authored by jurists, paid in IPN, for AI legal agents and legal research tools.
+**Tagline**: A curated, machine-readable library of legal reasoning authored by jurists where contributions are rewarded with utility tokens fairly for AI legal agents and legal research tools.
 
 ## What InfoLAW is
-InfoLAW.net is a vertical legal knowledge hub built on top of the IPPAN network. Jurists, scholars, and law firms publish structured legal articles, essays, case breakdowns, and datasets where every entry follows an AI-readable schema: facts → issues → rules → analysis → conclusion, accompanied by jurisdictional and temporal metadata. Buyers—including AI research teams and legal departments—license this reasoning in a marketplace model, paying in IPN for individual articles, curated collections, or data bounties. All contributions can be hashed and timestamped via HashTimer on IPPAN to establish authorship provenance.
+InfoLAW.net is a vertical legal knowledge hub built to ensure jurist contributions remain machine-readable and properly rewarded. Jurists, scholars, and law firms publish structured legal articles, essays, case breakdowns, and datasets where every entry follows an AI-readable schema: facts → issues → rules → analysis → conclusion, accompanied by jurisdictional and temporal metadata. Buyers—including AI research teams and legal departments—license this reasoning in a marketplace model with transparent pricing so contributions can later be rewarded with utility tokens fairly. All contributions can be hashed and timestamped via HashTimer to establish authorship provenance.
 
 ## Who it is for
 - **Jurists & scholars** who want to monetize their reasoning while maintaining attribution.
@@ -14,20 +14,20 @@ InfoLAW.net is a vertical legal knowledge hub built on top of the IPPAN network.
 ## What you can do with it
 - Publish deep legal analyses, datasets, and reasoning templates that AI systems can ingest immediately.
 - Discover curated corpora filtered by jurisdiction, topic, or outcome, with clear licensing terms.
-- Pay in IPN to unlock articles, subscribe to premium feeds, or fund bounties for missing datasets.
-- Anchor contributions on IPPAN for verifiable authorship, enabling courts or auditors to trust the chain of custody.
+- License articles, subscribe to premium feeds, or fund bounties for missing datasets with transparent, utility-token-aligned pricing.
+- Anchor contributions for verifiable authorship, enabling courts or auditors to trust the chain of custody.
 
-## Why IPN / IPPAN
-- **Native settlement layer**: Every transaction—per-article, per-dataset, or subscription—is denominated in IPN, the utility token of IPPAN, ensuring instant settlement and low fees.
-- **On-chain provenance**: Content hashes and timestamps can be anchored on IPPAN via HashTimer to prove authorship and publication time.
-- **Micro-transaction friendly**: IPPAN’s throughput allows micro-payments for granular content access, unlocking new pricing models for legal knowledge.
+## Why utility tokens
+- **Native settlement layer**: Every transaction—per-article, per-dataset, or subscription—is designed to flow through utility tokens so contributors are rewarded fairly with low fees.
+- **On-chain provenance**: Content hashes and timestamps can be anchored via HashTimer to prove authorship and publication time.
+- **Micro-transaction friendly**: A tokenized approach allows micro-payments for granular content access, unlocking new pricing models for legal knowledge.
 
 ## Roadmap (Phase 0 → Phase 4)
 1. **Phase 0 – Concept & UX**: Define the mission, product vision, and initial landing page structure.
 2. **Phase 1 – MVP Content + Static Landing Page**: Publish foundational essays/datasets, ship a static site explaining the marketplace.
-3. **Phase 2 – IPN Payments + Content Anchoring**: Integrate IPN wallets, enable HashTimer anchoring for all submissions.
-4. **Phase 3 – API for AI Agents + Marketplace / Bounties**: Launch structured data APIs, enable bounty contracts, and automated payouts in IPN.
-5. **Phase 4 – Governance, Reputation, and Advanced AI Integration**: Introduce jurist councils, staking-based reputation, and deeper integration with AI assistants operating atop IPPAN.
+3. **Phase 2 – Utility Token Rewards + Content Anchoring**: Integrate wallets, enable HashTimer anchoring for all submissions.
+4. **Phase 3 – API for AI Agents + Marketplace / Bounties**: Launch structured data APIs, enable bounty contracts, and automated payouts via utility tokens.
+5. **Phase 4 – Governance, Reputation, and Advanced AI Integration**: Introduce jurist councils, staking-based reputation, and deeper integration with AI assistants operating on top of transparent utility token mechanics.
 
 ## Development
 

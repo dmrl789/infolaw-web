@@ -24,9 +24,9 @@ const trustSignals = [
 ];
 
 const earningModels = [
-  "Pay-per-access unlocks priced in IPN.",
+  "Pay-per-access unlocks with transparent pricing and future utility token rewards.",
   "Recurring subscriptions to topical collections.",
-  "IPN-funded bounties for missing jurisdictions or doctrines.",
+  "Utility token-funded bounties for missing jurisdictions or doctrines.",
   "Revenue shares with peer reviewers and co-authors."
 ];
 
@@ -35,9 +35,9 @@ export default function ForJuristsPage() {
     <div className="bg-parchment">
       <section className="mx-auto max-w-4xl px-4 py-16">
         <p className="text-xs uppercase tracking-[0.4em] text-brand">For jurists & scholars</p>
-        <h1 className="mt-4 font-heading text-4xl text-slate-900">Publish explainable legal reasoning. Earn IPN.</h1>
+        <h1 className="mt-4 font-heading text-4xl text-slate-900">Publish explainable legal reasoning. Earn fairly.</h1>
         <p className="mt-6 text-lg text-slate-700">
-          InfoLAW transforms your expertise into structured assets. Upload drafts or port existing work into our schema, receive peer feedback, and launch collections that AI teams rely on. Payments settle instantly in IPN with full transparency.
+          InfoLAW transforms your expertise into structured assets. Upload drafts or port existing work into our schema, receive peer feedback, and launch collections that AI teams rely on. Contributions are designed to be rewarded with utility tokens fairly as usage and impact grow.
         </p>
       </section>
 
@@ -54,7 +54,7 @@ export default function ForJuristsPage() {
 
       <section className="mx-auto max-w-5xl px-4 py-12">
         <div className="rounded-3xl bg-white p-8 shadow-lg">
-          <h2 className="font-heading text-2xl text-slate-900">How you earn IPN</h2>
+          <h2 className="font-heading text-2xl text-slate-900">How your work is rewarded</h2>
           <ul className="mt-4 space-y-3 text-slate-700">
             {earningModels.map((model) => (
               <li key={model} className="flex items-start gap-3">
@@ -81,7 +81,7 @@ export default function ForJuristsPage() {
             ))}
           </ul>
           <p className="mt-6 text-slate-600">
-            HashTimer anchoring preserves timestamps for each revision, while dispute resolution workflows safeguard originality and accuracy. Reviewers earn IPN for validating schema compliance and citation fidelity.
+            HashTimer anchoring preserves timestamps for each revision, while dispute resolution workflows safeguard originality and accuracy. Reviewers also share in the utility token rewards for validating schema compliance and citation fidelity.
           </p>
         </div>
       </section>
