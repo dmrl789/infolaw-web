@@ -18,10 +18,10 @@ export default function RootLayout({
       <body className="bg-white text-slate-900 antialiased">
         <div className="min-h-screen flex flex-col">
           {/* Top navigation */}
-          <header className="border-b border-slate-200 bg-white/90 backdrop-blur">
+          <header className="border-b border-slate-800 bg-slate-950/95 text-slate-50 backdrop-blur">
             <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-6">
               <Link href="/" className="flex items-center gap-2">
-                <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-slate-900 text-xs font-semibold text-white">
+                <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-sky-500 text-xs font-semibold text-slate-950">
                   IL
                 </span>
                 <span className="text-lg font-semibold tracking-tight">
@@ -29,24 +29,27 @@ export default function RootLayout({
                 </span>
               </Link>
 
-              <nav className="hidden items-center gap-6 text-sm font-medium text-slate-700 md:flex">
-                <Link href="/" className="hover:text-slate-900">
+              <nav className="flex items-center gap-4 overflow-x-auto text-sm font-medium text-slate-100 md:gap-6">
+                <Link href="/" className="whitespace-nowrap hover:text-sky-200">
                   Home
                 </Link>
-                <Link href="/for-jurists" className="hover:text-slate-900">
+                <Link href="/for-jurists" className="whitespace-nowrap hover:text-sky-200">
                   For Jurists
                 </Link>
-                <Link href="/for-ai-teams" className="hover:text-slate-900">
+                <Link href="/for-ai-teams" className="whitespace-nowrap hover:text-sky-200">
                   For AI Teams
                 </Link>
-                <Link href="/about" className="hover:text-slate-900">
+                <Link href="/legal-reasoning" className="whitespace-nowrap hover:text-sky-200">
+                  Legal Reasoning
+                </Link>
+                <Link href="/about" className="whitespace-nowrap hover:text-sky-200">
                   About
                 </Link>
                 <Link
                   href="/contact"
-                  className="rounded-md bg-slate-900 px-3 py-1.5 text-sm font-semibold text-white hover:bg-slate-800"
+                  className="whitespace-nowrap rounded-md bg-sky-500 px-3 py-1.5 text-sm font-semibold text-slate-950 hover:bg-sky-400"
                 >
-                  Request Access
+                  Contact
                 </Link>
               </nav>
             </div>

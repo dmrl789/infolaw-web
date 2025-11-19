@@ -15,19 +15,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Utility containers */
+/* Responsive container */
 .section {
   @apply mx-auto max-w-6xl px-4 lg:px-6;
 }
 
+/* Generic card surface */
 .card-surface {
   @apply rounded-xl border border-slate-200 bg-white shadow-sm;
-}
-
-.stat-label {
-  @apply text-xs font-medium uppercase tracking-wide text-slate-500;
-}
-
-.stat-value {
-  @apply text-2xl font-semibold text-slate-900;
 }
