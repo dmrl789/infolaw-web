@@ -39,6 +39,9 @@ export default function RootLayout({
                 <Link href="/for-ai-teams" className="whitespace-nowrap hover:text-sky-200">
                   For AI Teams
                 </Link>
+                <Link href="/articles/legal-reasoning-ai-law" className="whitespace-nowrap hover:text-sky-200">
+                  Articles
+                </Link>
                 <Link href="/about" className="whitespace-nowrap hover:text-sky-200">
                   About
                 </Link>
