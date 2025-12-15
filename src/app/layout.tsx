@@ -22,7 +22,7 @@ export default function RootLayout({
             <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-6">
               <Link href="/" className="flex items-center gap-2">
                 <span className="inline-flex h-8 w-8 items-center justify-center rounded-md bg-sky-500 text-xs font-semibold text-slate-950">
-                  IL
+                  AI
                 </span>
                 <span className="text-lg font-semibold tracking-tight">
                   InfoLAW
